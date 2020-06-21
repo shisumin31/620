@@ -1,0 +1,5 @@
+@charset "utf-8";
+.banner_con,.service_con,.case_con,.news_con,.link_con{
+    width:100%;
+    margin: 0 auto;
+}
