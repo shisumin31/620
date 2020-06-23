@@ -51,7 +51,7 @@ a.head_nav-menu b em{
 
 .head_nav{
     height:60px;
-    max-width:1200px;
+   width: 1200px;
     margin:0 auto;
     text-align:center;
 }
@@ -76,15 +76,12 @@ width: 20%;
 .head_nav>li{
     height: 60px;
     line-height: 60px;
-    display: inline-block;
-    /* float: left; */
+    /* display: inline-block; */
+    float: left;
 }
 li.list_content >ul>li {
     float: left;
-    /* width: 100%;
-    text-align: left;
-    background: #fff;
-    padding: 0 30px; */
+
 }
 .head_nav>li>a
 ,li.list_content>ul>li>a{
@@ -106,4 +103,177 @@ li.list_content >ul>li>a{
     color:#333;
     font-size: 14px;
 }
+li.head_nav_right{
+    z-index:10;
+    width: 20%;
+}
+.head_nav_right ul{
+height: 100%;
+}
+.head_nav_right ul>li{
+    float: left;
+    position: relative;
+    height: 100%;
+}
+.head_nav_right ul>li.user{
+    padding-left: 60px;
+   
+}
+.head_nav_right>ul>li>a{
+    display: inline-block;
+    padding: 20px 10px;
+    height: 100%;
+    line-height: 20px;
+}
+.head_nav_right>ul>li>a>span{
+    color: black;
+}
+.box_s{
+    box-shadow: 0 1px 2px 0 rgba(102,102,102,0.5);
+}
+.head_user_content {
+    position: absolute;
+    display: none;
+    top: 60px;
+    right: -76px;
+    width: 360px;
+    height: auto;
+    padding: 20px;
+    transition: .25s;
+    overflow: hidden;
+    /* display: block; */
+}
+.user:hover .head_user_content{
+    display: block;
+    background: white;
+}
+.head_user_content>ul>li {
+    width: 100%;
+    font-weight: 400;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+}
 
+.head_user_content>ul>li>a {
+    height: 50px;
+    line-height: 50px;
+    color: #999;
+    display: block;
+    font-size: 14px;
+}
+.head_user_content>ul>li:first-child>a {
+    color: #de634f;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    float: left;
+    margin-bottom: 5px;
+}
+span.no_account {
+    color: #999;
+    float: right;
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.car:hover .head_user_content{
+    display: block;
+    background: white;
+
+}
+
+ul.car_nothing>li{
+    font-size: 14px;
+    text-align: center;
+    line-height: 30px;
+    padding-bottom:10px; 
+}
+ul.car_nothing>li>a{
+    display: block;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    margin-top: 20px;
+    padding: 0;
+}
+a.shopping_btn{
+    background: #de634f;
+}
+
+.search_input{
+    position: absolute;
+    left:50%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 60px;
+    width: 700px;
+    background: #fff;
+    /* padding: 0 50px; */
+    opacity: 0;
+    overflow: hidden;
+    margin-left: -350px;
+    display: none;
+}
+.search_active{
+    z-index:8;
+    overflow: visible;
+    opacity: 1;
+}
+.search_input .icon-sousuo{
+position: absolute;
+text-align: center;
+line-height: 60px;
+left: 20px;
+font-size: 24px;
+color:#999;
+cursor: pointer;
+font-weight: 500;
+}
+.search_input  .icon-guanbi {
+    position: absolute;
+    text-align: center;
+    line-height: 60px;
+    right: 10px;
+    font-size: 28px;
+    font-weight: 500;
+    color: #999;
+    cursor: pointer;
+}
+.search_input>input{
+    display: inline-block;
+    border: 0;
+    width: 650px;
+    padding: 10px;
+    margin-left: 45px;
+    box-sizing: border-box;
+    color:#101920;
+    font-size: 14px;
+    background-color: #fff;
+    height: 60px;
+    outline: 0;
+}
+.search_input>.search_recommended{
+    background: #fff;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    height: 0;
+    transition: 0.25s;
+   
+}
+.search_input>.search_recommended>ul {
+    background: #fff;
+    padding: 10px 0;
+    margin-bottom: 0;
+}
+.search_input>.search_recommended>ul>li>a {
+    display: inline-block;
+    width: 100%;
+    padding: 20px 40px;
+    background: #fff;
+    color: #999;
+    font-size: 14px;
+}

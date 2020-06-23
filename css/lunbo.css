@@ -1,0 +1,100 @@
+html, body {
+    position: relative;
+    height: 100%;
+  } 
+   body {
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    width: 100%;
+    height: 470px;
+   
+
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    height: 470px;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img{
+      width: 100%;
+      height: 470px;
+  }
+
+  .b_content{
+    position: absolute;
+    top: 0;
+    left: 17%;
+    text-align: center;
+    width: 296px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 100%;
+}
+  .b_content h1{
+      font-size: 40px;
+      font-weight: 700;
+      margin-bottom: 0;
+  }
+  .b_content h1 img{
+      width: 250px;
+      height: 40px;
+  }
+  .b_content div a{
+      display: block;
+      margin: 0 auto;
+      overflow: hidden;
+      position: relative;
+  }
+  .b_content a.buy{
+      font-size: 14px;
+      width: 130px;
+      height: 40px;
+      line-height: 40px;
+      text-align: center;
+      cursor: pointer;
+      margin-top: 34px;
+      margin-bottom: 10px;
+      border-radius: 50px;
+      border: 1px solid rgb(54, 53, 53);
+      color: #000;
+  }
+  .b_content a.buy:hover {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+    transition: .25s;
+}
+  .b_content p:nth-child(2){
+      font-size: 20px;
+      margin-bottom: 8px;
+  }
+  .b_content p{
+      font-size: 16px;
+      margin-bottom: 0;
+  }
+  
+  .b_content  a.more{
+      color: #5097df;
+      font-size: 14px;
+  }
+  
+

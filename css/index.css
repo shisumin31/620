@@ -1,5 +1,116 @@
 @charset "utf-8";
-.banner_con,.service_con,.case_con,.news_con,.link_con{
-    width:100%;
-    margin: 0 auto;
+.cg {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  min-width: 1200px;
+  color: white;
+  margin-bottom: 10px;
+  padding-top: 10px;
+}
+.cg div a img {
+  width: 100%;
+  height: 467px;
+}
+.b_content a.white {
+  background: white;
+  color: #fff;
+  border: 1px solid #fff;
+  translate: 0.25s;
+}
+.white a .buy:hover {
+  background: #fff;
+  color: black;
+}
+
+
+.content_list{
+    overflow: hidden;
+}
+.content_list >.col-1{
+    padding: 10px;
+    height: 470px;
+    position: relative;
+    width: 50%;
+    float: left;
+    padding-top: 0;
+
+}
+
+.content_list>div:nth-child(1){
+    padding-right: 5px;
+    padding-bottom: 5px;
+}
+
+
+.content_list>div.col-1>a{
+width: 621px;
+height: 445px;
+display: block;
+}
+.content_list>div.col-1>a>img{
+    width: 100%;
+    height: 460px;
+}
+
+
+.content_list>.col-1>div{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    top: 5%;
+}
+.content_list > .col-1 > div h3 {
+    font-size: 24px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+.content_list > div > div p {
+    font-size: 16px;
+   
+}
+
+
+
+.recommend{
+    background: #f0f0f0;
+    width: 100%;
+    padding: 40px;
+    padding-left: calc((7% - 25px));
+    padding-right: calc((7% - 25px));
+    min-height: 464px;
+    
+}
+
+.recommend .col-2{
+    padding: 0 25px;
+    float: left;
+    width: 375px;
+}
+.recommend>div>div:first-child>a>img {
+    width: 331px;
+    height: 184px;
+
+}
+.recommend>div>div:last-child {
+    font-weight: 500;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+.recommend>div>div:last-child>p:first-child {
+    font-size: 14px;
+    color: #666666;
+    margin-bottom: 5px;
+}
+.recommend>div>div:last-child>p:nth-child(2) {
+    font-size: 18px;
+    color: #333;
+    height: 60px;
+    width: 100%;
+    overflow: hidden;
+}
+.recommend>div>div:last-child>a {
+    font-size: 14px;
+    color: #5097df;
 }
