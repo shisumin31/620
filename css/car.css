@@ -1,0 +1,252 @@
+@charset "utf-8";
+#cart{
+    background: #f0f0f0;
+    padding-bottom: 60px;
+}
+.container-fluid{
+    width: 1200px;
+    padding: 0;
+    margin-right: auto;
+    margin-left: auto;
+}
+.bg-payorder {
+    height: 140px;
+    background: #fff;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    padding: 20px 40px;
+}
+.bg-payorder>ul {
+    width: 100%;
+    height: 60px;
+    margin-top: 10px;
+}
+.bg-payorder>ul>li.active {
+    color: #333;
+    border-bottom: 2px solid #333;
+}
+.bg-payorder>ul>li {
+    position: relative;
+    width: 25%;
+    height: 100%;
+    color: #999;
+    font-size: 16px;
+    border-bottom: 2px solid #e6e6e6;
+    float: left;
+    text-align: center;
+    font-weight: 500;
+    line-height: 50px;
+}
+.bg-payorder>ul>li.active>b {
+    background: #333;
+}
+.bg-payorder>ul>li>b {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -5px;
+    border-radius: 10px;
+    background: #e6e6e6;
+    text-align: center;
+    line-height: 40px;
+    color: #666;
+}
+
+#cart .container{
+width: 100%;
+}
+.cart-con {
+    padding: 0px 45px 0px 45px;
+    background: #fff;
+}
+.cart-h1 {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    padding: 40px 0;
+    color: #333;
+    font-weight: 500;
+}
+#cart table {
+    width: 100%;
+    margin-bottom: 20px;
+}
+.table-bordered {
+    font-size: 13px;
+}
+thead {
+    border: none!important;
+    display: none;
+}
+.table>thead>tr>th{
+    line-height: 1.481;
+}
+.table-bordered> tbody> tr {
+    border-bottom: 1px solid #eee;
+}
+#cart table td.productImage {
+    padding: 30px 10px;
+    text-align: left;
+    max-width: 450px;
+}
+#cart table td {
+    vertical-align: top;
+    max-width: 450px;
+    padding:40px 10px;
+    text-align: center;
+
+}
+.productPrice{
+    font-size: 18px;
+    font-weight: bold;
+    color:rgb(194, 189, 189) ;
+}
+
+.table-bordered> tbody> tr td {
+    border: none!important;
+}
+#cart .order-list td.productImage img {
+    height: 130px;
+    width: 130px;
+}
+.productname .pdt-title {
+    font-size: 16px;
+    color: #000;
+}
+.btn-cnts {
+    border: 1px solid #eee;
+    border-radius: 3px;
+    display: inline-block;
+    padding-top: 4px;
+}
+.table-cut, .table-add {
+    cursor: pointer;
+    padding: 6px 8px;
+    color: #606366;
+    font-size: 16px;
+}
+.cart-cnt {
+    height: 25px;
+    background: transparent;
+    border: none;
+    width: 40px;
+    text-align: center;
+    color: #333;
+}
+.sum{
+    color: rgb(50, 50, 50);
+    font-size: 18px;
+}
+.cart-con .cart-close {
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    color: #666;
+    text-align: center;
+    text-shadow: none;
+    font-weight: 400;
+    cursor: pointer;
+    font-size: 22px;
+    line-height: 27px;
+    display: inline-block;
+    margin-left: 8px;
+    opacity: 1;
+    float: none;
+}
+.subInfo {
+    width: 100%;
+    display: inline-block;
+    padding: 20px 0 70px 0;
+}
+.subRight {
+    float: right;
+    width: 32%;
+}
+.subGroup {
+    width: 100%;
+}
+.subGroup div{
+    width: 100%;
+}
+.subGroup div:first-child {
+    border-bottom: 1px solid rgb(230,230,230);
+    padding-bottom: 25px;
+}
+.subGroup div p:last-child {
+    align-items: flex-end;
+}
+.subGroup div p {
+    line-height: 30px;
+    font-size: 14px;
+    color: #999;
+    display: flex;
+    justify-content: space-between;
+}
+.subGroup div p:last-child>span:first-child {
+    font-size: 14px;
+    color: #999;
+}
+.total {
+    font-size: 30px;
+    color: #333 !important;
+}
+.total b {
+    font-size: 14px;
+    color: #333;
+}
+.btn-cart-groups {
+    margin-top: 50px;
+    width: 100%;
+    height: 55px;
+}
+#orderCheck {
+    width: 100%;
+    height: 100%;
+}
+.btn-cart-groups-inner {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn-cart-groups a {
+    width: 48%;
+    border-radius: 3px;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.pay-continue {
+    background: #fff;
+    border: 1px solid rgb(30,30,30);
+    color: rgb(30,30,30);
+}
+.btn-cart-groups a {
+    width: 48%;
+    border-radius: 3px;
+    height: 100%;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+}
+.pay-continue {
+    background: #fff;
+    border: 1px solid rgb(30,30,30);
+    color: rgb(30,30,30);
+}
+.go-pay {
+    border: none;
+    background: #de634f;
+    color: #fff;
+}

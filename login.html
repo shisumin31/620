@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录</title>
+    <link rel="stylesheet" href="./css/login.css">
+    <script src="./js/jquery.js"></script>
+    <script src="./js/public.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="./images/logo.png" alt="">
+        </div>
+        <form id="loginForm">
+            <div class="navTab" id="tab_nav">
+                <label for="tab-mobile" class="tab-btn cur" style="margin-right:8px">
+                    <input type="radio" name="myradio" id="tab-mobile" value="mobile" checked="checked">账号密码登录</label>|
+                <label for="tab-email" class="tab-btn" style="margin-left:8px">
+                    <input type="radio" name="myradio" id="tab-email" value="email">手机验证码登录</label>
+            </div>
+
+            <div class="navCon" id="tab_con">
+                <div class="reg-id">
+                    <dl>
+                        <dd>
+                            <div class="input-con">
+                                <input type="text" id="username" name="username" placeholder="邮箱/手机号码/用户名">
+                                <span class="icon-id"></span>
+                            </div>
+                            <div class="checktip" id="user_name_tag">
+                                <span id="username_error" class="Validform_checktip Validform_right"></span>
+                            </div>
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dd>
+                            <div class="input-con">
+                                
+                                       
+                                    <input type="password" id="password" name="password" placeholder="密码为6-16个字符（数字、字母、符号至少包含两种）">	                            </div>
+                            <div class="checktip" id="password_tag">
+                                <span id="password_error" class="Validform_checktip Validform_right"></span>
+                            </div>
+                        </dd>
+                    </dl> 
+                 </div>
+               <div class="reg-phone" style="display: none;">
+                    <dl>
+                        <dd>
+                            <div class="input-con">
+                                <input type="text" id="mobile" name="mobile" placeholder="手机号码" datatype="m" errormsg="手机号码格式错误">
+                                <span class="icon-id"></span>
+                            </div>
+                            <div class="checktip" id="mobile-tag">
+                                <span id="phone_error" class="Validform_checktip Validform_right"></span>
+                            </div>
+                        </dd>
+                    </dl>
+
+                    <dl>
+                        <dd>
+                            <div class="input-con">
+                                <input type="text" id="mobileValidateCode" name="mobileValidateCode" placeholder="请输入手机验证码" datatype="*">
+                                <input type="button" value="获取验证码" class="btn-code" id="btn-code-mobile">
+                                <input type="hidden" id="verifySessionId" value="">
+                            </div>
+                            <div class="checktip"><span class="Validform_checktip Validform_right" id="code_error"></span></div>
+                        </dd>
+                    </dl>
+                    <div id="mobile-tips" style="color:red"></div>
+                 </div>
+            </div>
+          <div id="tips"></div>
+            <input type="hidden" name="back_url" value=" ">
+            <input type="button" style="margin-top:10px" id="login_btn_id" value="立即登录" class="btn-login">
+            <div class="register-now">
+                <a href="register.html" style="color:#e8380d">注册新账号</a>
+                <span style="font-size: 18px;padding: 0 7px;color: #d5d5d5;">|</span>
+                <a style="color:#34383d" href="#">忘记密码?</a>
+            </div>
+            
+                </label>
+            </div>
+        </form> 
+    </div>
+
+</body>
+
+<script>
+    $("#login_btn_id").click(function(){
+ $.get("http://jx.xuzhixiang.top/ap/api/login.php",{
+    username:$("#username").val(),
+       password:$("#password").val()
+    },data=>{
+console.log(data);
+if(data.code===1){
+    setCookie("uid",data.data.id,8)
+    setCookie("token",data.data.token,8)
+    setCookie("uname",data.data.username,8)
+
+location.href="./index.html";
+}else{
+    alert(data.msg);
+}
+    })
+    })
+
+</script>
+</html>

@@ -1,0 +1,28 @@
+@charset "utf-8";
+form,ul,ol,dl,dd,p{
+    margin: 0;
+    padding: 0;
+}
+#registerform {
+    width: 370px;
+    margin: 0 auto;
+}
+.navCon .input-con .btn-code {
+    border-left: 1px solid #e0e4e7;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 54px;
+   
+    padding: 0;
+    cursor: pointer;
+    background: #fff;
+    width: 100px;
+    text-align: center;
+}
+.clear {
+    clear: both;
+    height: 0;
+    overflow: hidden;
+}
