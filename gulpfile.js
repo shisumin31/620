@@ -1,0 +1,46 @@
+const gulp=require("gulp");
+const connect=require("gulp-connect");
+const uglify=require("gulp-uglify");//用于压缩
+gulp.task("copyHtml",done=>{
+    gulp.src("*.html").pipe(gulp.dest("dist"))
+    .pipe(connect.reload());
+    done();
+});
+gulp.task("copyImg",done=>{
+    gulp.src("images/*{jpg,png}").pipe(gulp.dest("dist/images"))
+    .pipe(connect.reload());
+    done();
+});
+gulp.task("copyCSS",done=>{
+    gulp.src("css/**").pipe(gulp.dest("dist/css"))
+    .pipe(connect.reload());
+    done();
+});
+gulp.task("copyIco",done=>{
+    gulp.src("iconfont/**").pipe(gulp.dest("dist/iconfont"))
+    .pipe(connect.reload());
+    done();
+});
+gulp.task("copyJs",done=>{
+    gulp.src("js/**").pipe(gulp.dest("dist/js"))
+    .pipe(connect.reload());
+    done();
+});
+gulp.task("copyJson",done=>{
+    gulp.src("json/**").pipe(gulp.dest("dist/json"))
+    .pipe(connect.reload());
+    done();
+});
+gulp.task("server",(done)=>{
+connect.server({
+    root:"dist",
+    livereload:true
+});
+done();
+})
+gulp.task("uglify",done=>{
+        gulp.src(["js/*"])
+        .pipe(uglify())
+        .pipe(gulp.dest("dist/js"));
+        done();
+    })
